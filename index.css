@@ -1,0 +1,94 @@
+body{
+    background: rgba(0,0,0,0.6) url('/images/WhatsApp\ Image\ 2024-09-29\ at\ 10.14.45\ AM.jpeg') center center fixed ;
+    
+    background-blend-mode: darken;
+    background-size: 1000px 1000px;
+    
+    
+}
+
+
+
+nav {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Glass-like blur effect */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Nav container */
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Evenly spaced items */
+    align-items: center;
+    padding: 15px;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Hover and active states */
+nav a:hover {
+    background-color: #04AA6D; /* Green background on hover */
+    color: #fff;
+}
+
+nav a.active {
+    background-color: #04AA6D; /* Green active background */
+    color: #fff;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Content padding to avoid being hidden by fixed navbar */
+.content {
+    padding-top: 80px; /* Adjust based on the navbar height */
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Section shadow */
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #04AA6D;
+    display: inline-block;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
